@@ -32,7 +32,7 @@ RUN cd /tmp && \
     export PREFIX=/opt/amiga13 && \
     mkdir -p $PREFIX && \
     cd amiga-gcc-13.2 && \
-    make branch branch=amiga13.2 && \
+    make branch branch=amiga13.2 mod=gcc && \
     make update && \
     make all -j20 PREFIX=$PREFIX && \
     rm -rf /tmp/amiga-gcc-13.2
